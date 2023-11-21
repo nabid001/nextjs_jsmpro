@@ -1,10 +1,9 @@
 interface Props {
-  type: string;
   category: string;
   query: string;
 }
 
-const Header = ({ type, category, query }: Props) => {
+const Header = ({ category, query }: Props) => {
   if (query && category) {
     return (
       <h1 className="heading3 self-start text-white-800">
